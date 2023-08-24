@@ -1,28 +1,42 @@
-/*
-RESET
- */
+/*---------------------
+    RESET
+----------------------*/
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
 
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
+body{
+   background-color: #1d2d3c;
+}
 
- /* 
- GENERAL
- */
+/*---------------------
+   COMMONS
+----------------------*/
+.container{
+   width: 100%;
+   max-width: 1200px;
+   margin: auto;
+}
 
- body{
-    font-family: Arial, Helvetica, sans-serif;
- }
- 
- .container{
-    max-width: 1200px;
-    margin: 0 auto;
- }
+/*---------------------
+   HEADER
+----------------------*/
+header{
+   background-color: #06131f;
+   padding: .9375rem 6.25rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: sticky;
+   left: 0;
+   right: 0;
+   top: 0;
+   z-index: 50;
+   filter: drop-shadow(0 0 2px white);
+}
 
- /* DEBUG */
-.debug{
-
-
+header img{
+   width: 50px;
 }

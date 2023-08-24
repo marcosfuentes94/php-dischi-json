@@ -4,41 +4,40 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Template|HTML|CSS</title>
-
-            <!-- CSS -->
-            
+        <title>Dischi Json</title>
+        <!-- Axios CDN -->
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <!-- Vuejs CDN -->
+            <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <!-- Fontawesome CDN -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/style.css">
-
-            <!-- FONT -->
-
-
     </head>
-    
-<body>
+    <body>
+        <div id="app">
+            <header>
+                <div class="page-logo">
+                    <a href="#">
+                        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/991px-Spotify_icon.svg.png" alt="">
+                    </a>
+                </div>
+                
+            </header>
+            <main>
+                <div class="vinyls-container container">
+                    <div class="vinyl" v-for="vinyl in vinylLists">
+                        <div class="vinyl__image">
+                            <img :src="vinyl.poster" :alt="`${vinyl.title}-poster-img`">
+                        </div>
+                        <div class="vinyl__info">
+                            <h3 class="vinyl__title">{{vinyl.title}}</h3>
+                            <small class="vinyl__author">{{vinyl.author}}</small>
+                            <h4 class="vinyl__year">{{vinyl.year}} / {{vinyl.genre}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
 
-    <!-- HEADER -->
-    <header>
-        
-
-    </header>
-    <!-- FINE HEADER -->
-
-    <!-- MAIN -->
-    <main>
-        
-        <div class="container"></div>
-        
-    </main>
-    <!-- FINE MAIN -->
-
-    <!-- FOOTER -->
-    <footer>
-
-    </footer>
-    <!-- FINE FOOTER -->
-    
-
-    
-</body>
+    </body>
 </html>
