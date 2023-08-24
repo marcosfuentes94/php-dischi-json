@@ -40,3 +40,46 @@ header{
 header img{
    width: 50px;
 }
+/* MAIN */
+ main {
+    margin-top: 40px;
+ }
+ 
+ .vinyls-container{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ .vinyl{
+    width: calc(100% / 3 - 80px);
+    background-color: #112030;
+    text-align: center;
+    padding: 25px 40px;
+    margin: 0 40px;
+    margin-bottom: 3.125rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    filter: drop-shadow(0 0 5px black);
+ }
+ 
+ .vinyl:hover{
+    transform: scale(1.1);
+ }
+ 
+ .vinyl .vinyl__image{
+    margin-bottom: 15px;
+ }
+ 
+ .vinyl .vinyl__image img{
+    width: 230px;
+    height: 230px;
+ }
+ 
+ .vinyl .vinyl__info{
+    color: white;
+ }
+ 
+ .vinyl .vinyl__info .vinyl__author{
+    margin: 8px 0;
+    display: inline-block;
+ }

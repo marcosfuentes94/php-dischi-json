@@ -1,13 +1,4 @@
-   openSearchBar(){
-            this.searchBar = !this.searchBar;
-            if(!this.searchBar){
-                return this.$refs.searchInput.focus();
-            }
-        }
-
-
-
-        const { createApp } = Vue
+const { createApp } = Vue
 
 createApp({
     data() {
